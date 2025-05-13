@@ -25,6 +25,9 @@ app = dash.Dash(
 server = app.server
 app.title = "Phân tích cổ phiếu thời gian thực"
 
+# Để đảm bảo cả app:app và app:server đều hoạt động trong gunicorn
+app = server
+
 # Danh sách các mã cổ phiếu phổ biến
 popular_tickers = get_popular_tickers()
 
