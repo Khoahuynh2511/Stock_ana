@@ -1,0 +1,180 @@
+/* Giao diện tổng thể */
+body {
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Header */
+h1 {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Inputs */
+.form-control, .form-select {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Dropdown customization */
+.Select-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.Select-control:hover {
+    border-color: #adb5bd;
+}
+
+.is-focused:not(.is-open) > .Select-control {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.Select-menu-outer {
+    border-radius: 0 0 0.25rem 0.25rem;
+    border: 1px solid #ced4da;
+    border-top-color: #e9ecef;
+}
+
+.VirtualizedSelectOption {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.VirtualizedSelectFocusedOption {
+    background-color: #e9ecef;
+}
+
+.Select-option.is-selected {
+    background-color: #e9ecef;
+}
+
+.Select-option:hover {
+    background-color: #f8f9fa;
+}
+
+/* Group headers in dropdown */
+.Select-group-header {
+    font-weight: bold;
+    background-color: #e9f2ff;
+    color: #0d6efd;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d1e6ff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.alert-info {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Plotly adjustments */
+.js-plotly-plot .plotly .modebar {
+    top: 10px !important;
+    right: 10px !important;
+}
+
+/* Loading spinner */
+._dash-loading {
+    margin: auto;
+    color: #0d6efd;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Dropdown with groups */
+.dropdown-with-groups .Select-value, 
+.dropdown-with-groups .Select-placeholder {
+    padding: 0.5rem 0.75rem;
+    line-height: 1.5;
+}
+
+.dropdown-with-groups .Select-group > .Select-option {
+    padding-left: 2rem;
+}
+
+.dropdown-with-groups .Select--single > .Select-control .Select-value {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-with-groups .Select-arrow-zone {
+    padding-right: 0.75rem;
+} 
