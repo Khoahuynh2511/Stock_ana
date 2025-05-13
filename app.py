@@ -647,4 +647,8 @@ def update_status_text(auto_update_enabled, update_interval):
 
 # Chạy ứng dụng
 if __name__ == "__main__":
-    app.run_server(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8050))) 
+    app.run_server(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8050)))
+    
+# Tạo alias 'app' cho server để gunicorn có thể sử dụng cả app:app và app:server
+# Dòng này chỉ thực thi khi module được import, không phải khi chạy trực tiếp
+app = server 
